@@ -9,3 +9,9 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+
+function toggleSignupFields() {
+    var signupType = document.getElementById("signupType").value;
+    document.getElementById("studentFields").style.display = signupType === "student" ? "block" : "none";
+    document.getElementById("teacherFields").style.display = signupType === "teacher" ? "block" : "none";
+}

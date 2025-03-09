@@ -21,10 +21,27 @@
                     <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your email for registeration</span>
+                <span>or use your email for registration</span>
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
+                
+                <!-- Dropdown for Signup Type -->
+                <select id="signupType" onchange="toggleSignupFields()">
+                    <option value="">Select Signup Type</option>
+                    <option value="student">Signup as Student</option>
+                    <option value="teacher">Signup as Teacher</option>
+                </select>
+
+                <!-- Additional Fields -->
+                <div id="studentFields" style="display:none;">
+                    <input type="number" placeholder="Roll Number">
+                    <input type="text" placeholder="Branch">
+                </div>
+                <div id="teacherFields" style="display:none;">
+                    <input type="text" placeholder="Teacher ID">
+                </div>
+
                 <button>Sign Up</button>
             </form>
         </div>
