@@ -433,14 +433,14 @@ input[type="search"] + span::after {
 }
 
 .class-box {
-    height: 150px;
+    height: 180px;
     width: 100%;
     background: rgb(235, 233, 233);
     /* background: linear-gradient(var(--main-color), var(--secondary-color),var(--tertiary-color)); */
     border-radius: var(--border-radius);
     cursor: pointer;
     box-shadow: var(--shadow);
-    transition: all 0.3s;
+    transition: all 0.3s;   
 }
 
 
@@ -451,6 +451,7 @@ input[type="search"] + span::after {
 .class-box {
     font-weight: bold;
     display: flex;
+
 }
 
 /* .percentage {
@@ -472,7 +473,7 @@ input[type="search"] + span::after {
         var(--chart-secondary-color)     var(--pace)  100%
     );
     margin-left: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .class-box .class-box-chart-2 {
@@ -484,7 +485,7 @@ input[type="search"] + span::after {
         var(--chart-secondary-color)     var(--Communication)  100%
     );
     margin-left: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .class-box .class-box-chart-3 {
@@ -496,7 +497,7 @@ input[type="search"] + span::after {
         var(--chart-secondary-color)     var(--Examples)  100%
     );
     margin-left: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .class-box .class-box-chart-4 {
@@ -508,11 +509,12 @@ input[type="search"] + span::after {
         var(--chart-secondary-color)     var(--Timing)  100%
     );
     margin-left: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 .class-box .class-box-content {
     display: block;
+    margin-top: 2.5rem;
 }
 
 .main-content .class-box .class-box-content  .title {
@@ -558,7 +560,7 @@ input[type="search"] + span::after {
     color: var(--primary-text-color);
     padding:1rem;
     margin-bottom: 30px;
-    height: 21.31rem;
+    height: 27rem;
     box-shadow: var(--shadow);
 }
 
@@ -596,4 +598,23 @@ input[type="search"] + span::after {
 
 .trending-hashtags ul li:hover {
     border: 1px solid var(--primary-text-color);
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    /* margin: 20px 0; */
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.Review-handing {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #000;
 }

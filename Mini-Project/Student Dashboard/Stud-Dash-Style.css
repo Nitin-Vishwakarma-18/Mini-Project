@@ -425,10 +425,11 @@ input[type="search"] + span::after {
 
     margin-top: 10px;
     margin-bottom: 30px;
+    padding-top: 0.6rem;
 }
 
 .class-box {
-    height: 150px;
+    height: 170px;
     width: 100%;
     background: rgb(235, 233, 233);
     /* background: linear-gradient(var(--main-color), var(--secondary-color),var(--tertiary-color)); */
@@ -453,7 +454,7 @@ input[type="search"] + span::after {
 }
 
 .class-box img {
-    height: 50%;
+    height: 65%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: inherit;
@@ -521,3 +522,46 @@ input[type="search"] + span::after {
 .trending-hashtags ul li:hover {
     border: 1px solid var(--primary-text-color);
 }
+
+#Announcement-wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    padding: auto;
+}
+
+/* <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> */
+/* <body>
+    <div id="Attendance-wrapper">
+        <h2>Attendance</h2>
+        <canvas id="attendanceChart" width="400" height="400"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('attendanceChart').getContext('2d');
+        const attendanceChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Present', 'Absent'],
+                datasets: [{
+                    data: [65, 35],
+                    backgroundColor: ['#36A2EB', '#FF6384'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'Student Attendance'
+                    }
+                }
+            }
+        });
+    </script>
+</body> */

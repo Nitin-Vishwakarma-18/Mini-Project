@@ -3,22 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <link rel="icon" type="image/x-icon" href="/svg/dashboard.svg"> -->
     <title>Faculty Dashboard</title>
 
     <link rel="stylesheet" href="Facul_dash_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div id="page-container">
         <div id="main-sidebar-wrapper">
                 <div id="sidebar-sticky">
                     <div id="sidebar-logo">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="3" y1="9" x2="21" y2="9"/>
-                            <line x1="9" y1="21" x2="9" y2="9"/>
-                        </svg> -->
                         <h1>Faculty Dashboard</h1>
                     </div>
                     <nav id="sidebar-nav">
@@ -40,23 +34,14 @@
         
         <div id="header-wrapper">
             <div id="user-profile-area-wrapper">
-                <!-- <nav id="user-nav">
-                    <div id="buttons-wrapper">
-                        <button type="button">Profile</button>
-                        <button type="button">Settings</button>
-                        <button type="button">Support</button>
-                    </div>
-                </nav> -->
                 <div id="user-controls-profile">
-                    <!-- <input type="search" name="user_search" id="user_search">
-                    <span></span> -->
                     <h2 >Welcome back, <span id="user-name">Neha Kunte</span></h2>
 
                     <div id="vertical-line"></div>
                     <div id="user-info">
                         <p class="user-class">Class :- SE-CMPN</p>
                         <p class="user-div">Division :- C</p>
-                        <p class="user-roll">Roll NO. :- 39</p>
+                        <p class="user-roll">Teacher ID :- 39</p>
                         <p class="user-att">Attendance :- 65%</p>
                     </div>
 
@@ -65,20 +50,6 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- <div id="notifications-wrapper">
-                <h2 class="section-title">Notifications</h2>
-                <div id="notification-elements-wrapper" class="scroll">
-                    <div class="notification">This is a notification</div>
-                    <div class="notification">This is a notification</div>
-                    <div class="notification">This is a notification</div>
-                    <div class="notification">This is a notification</div>
-                    <div class="notification">This is a notification</div>
-                    <div class="notification">This is a notification</div>
-                    <div class="notification">This is a notification</div>
-                    <div class="notification">This is a notification</div>
-                </div>
-            </div> -->
         </div>
 
         
@@ -86,8 +57,8 @@
             <h2 class="section-title">Performance</h2>
             <div id="classes" class="main-content">
                 <div class="class-box">
-                    <div class="class-box-chart-1" style=" --pace: 50%">
-                        <!-- <p class="percentage">50%</p> -->
+                    <div class="class-box-chart-1" >
+                        <canvas id="paceChart" width="400" height="400"></canvas>
                     </div>
                     <div class="class-box-content">
                         <p class="title">Pace</p>
@@ -95,8 +66,8 @@
                     </div>
                 </div>
                 <div class="class-box">
-                    <div class="class-box-chart-2" style=" --Communication: 80%">
-                        <!-- <p class="percentage">80%</p> -->
+                    <div class="class-box-chart-2" >
+                        <canvas id="communicationChart" width="400" height="400"></canvas>
                     </div>
                     <div class="class-box-content">
                         <p class="title">Communication</p>
@@ -104,8 +75,8 @@
                     </div>
                 </div>
                 <div class="class-box">
-                    <div class="class-box-chart-3" style=" --Examples: 60%">
-                        <!-- <p class="percentage">60%</p> -->
+                    <div class="class-box-chart-3">
+                        <canvas id="examplesChart" width="400" height="400"></canvas>
                     </div>
                     <div class="class-box-content">
                         <p class="title">Examples</p>
@@ -113,8 +84,8 @@
                     </div>
                 </div>
                 <div class="class-box">
-                    <div class="class-box-chart-4" style=" --Timing: 90%">
-                        <!-- <p class="percentage">90%</p> -->
+                    <div class="class-box-chart-4">
+                        <canvas id="timingChart" width="400" height="400"></canvas>
                     </div>
                     <div class="class-box-content">
                         <p class="title">Timing</p>
@@ -123,76 +94,33 @@
                 </div>
             </div>
 
-
-            <h2 class="section-title">To Do</h2>
-            <div id="todo" class="main-content">
-                <div class="todo-box">
-                    <h3>Assignment No. 3</h3>
-                    <p>Due Date: 8/31/24</p>
-                    <p>Class: DSGT</p>
-                    
-                    <div class="todo-buttons">
-                        <button type="button">Submit</button>
-                        <button type="button">Details</button> 
-                    </div>
-                </div>
-                <div class="todo-box">
-                    <h3>Java 5 Experiments</h3>
-                    <p>Due Date: 9/1/24</p>
-                    <p>Class: OOPMs</p>
-                    
-                    <div class="todo-buttons">
-                        <button type="button">Submit</button>
-                        <button type="button">Details</button>
-                    </div>
-                    
-                </div>
-                <div class="todo-box">
-                    <h3>Mentor Book</h3>
-                    <p>Due Date: 9/11/24</p>
-                    <p>Class: Mentoring</p>
-                    
-                    <div class="todo-buttons">
-                        <button type="button">Submit</button>
-                        <button type="button">Details</button>
-                    </div>
-                </div>
-                <div class="todo-box">
-                    <h3>Worksheet 12</h3>
-                    <p>Due Date: 9/11/24</p>
-                    <p>Class: EM-III</p>
-                    
-                    <div class="todo-buttons">
-                        <button type="button">Submit</button>
-                        <button type="button">Details</button>
-                    </div>
-                </div>
-            </div>
         </div>
         
     
         <div id="right-sidebars-wrapper">
             <h2 class="section-title">OverAll</h2>
             <div id="Announcement-wrapper" class="right-sidebar">
-                <div class="chart">
-                    <!-- <p class="percentage-2">70%</p> -->
-                </div>
-            </div>
-            <h2 class="section-title">Trending Hashtags</h2>
-            <div id="Trending-wrapper" class="right-sidebar">
-                <div class="trending-hashtags">
-                    <ul>
-                        <li>#NOSLEEP</li>
-                        <li>#motivation</li>
-                        <li>#viratkohli</li>
-                        <li>#career</li>
-                        <li>#jobs</li>
-                        <li>#meme</li>
-                        <li>#holiday</li>
-                    </ul>
+                <div>
+                    <canvas id="OverallChart" width="400" height="400"></canvas>
                 </div>
             </div>
         </div>
     </div>
+
+    <h3 class="Review-handing">Student Review</h3>
+    <div id="review-card" class="review-card">
+        
+        <hr>
+            <p>"Ma'am is very knowledgeable."</p>
+            <p><strong>Date:</strong> 14 Aug 2023</p>
+            <p><strong>Time:</strong> 5:34 PM</p>
+        <hr>
+            <p>"Thank you for being such an inspiring and dedicated teacher! Your passion for teaching and genuine care for your students truly makes a difference. You have a wonderful ability to make complex topics easy to understand, and your encouragement and support are greatly appreciated. Keep up the amazing work—you are making a lasting impact!"</p>
+            <p><strong>Date:</strong> 14 Aug 2023</p>
+            <p><strong>Time:</strong> 5:34 PM</p>
+        <hr>
+    </div>
+
+   <script src="../Faculty Dashboard/Facul_main.js"></script>
 </body>
 </html>

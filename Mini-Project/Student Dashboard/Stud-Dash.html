@@ -8,6 +8,7 @@
     <title>Student Dashboard</title>
 
     <link rel="stylesheet" href="Stud-Dash-Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div id="page-container">
@@ -84,30 +85,39 @@
         <div id="main-content-section-wrapper" >
             <h2 class="section-title">Subjects</h2>
             <div id="classes" class="main-content">
-                <div class="class-box">
-                    <img src="https://th.bing.com/th/id/OIP.1qnQXU3F9lvOWHEjLCzFMgHaEC?rs=1&pid=ImgDetMain" alt="Calculus class picture">
-                    <p>Engineering Mathematics III</p>
-                    
-                </div>
-                <div class="class-box">
-                    <img src="https://th.bing.com/th/id/R.4d25343077473127d347597c243ec7a1?rik=TknzCO7ge7x0Mw&riu=http%3a%2f%2fvertassets.blob.core.windows.net%2fimage%2f149c7a64%2f149c7a64-bf59-4f8f-8ea6-34746519af75%2fneurosuite_karolinska_1.jpg&ehk=%2b7NgRUAQL7oth10KvcoF6KeMZ18VJrKMueujsoEC7es%3d&risl=1&pid=ImgRaw&r=0" alt="DS Picture">
-                    <p>Data Structure</p>
-                    
-                </div>
-                <div class="class-box">
-                    <img src="https://th.bing.com/th/id/OIP.RJI1GFvC5RQZUcdMSXCnhgHaFj?rs=1&pid=ImgDetMain" alt="English class picture">
-                    <p>Digital Logic And Computer Architecture</p>
-                    
-                </div>
-                <div class="class-box">
-                    <img src="https://th.bing.com/th/id/OIP.d64-WpWSphFtQ_BZufzJ2AHaE8?rs=1&pid=ImgDetMain" alt="Psychologyy class picture">
-                    <p>Discrete Structures And Graph Theory</p>
-                    
-                </div>
+                <a href="../Faculty page/Fucl_page_math.html">
+                    <div class="class-box">
+                        <img src="https://th.bing.com/th/id/OIP.1qnQXU3F9lvOWHEjLCzFMgHaEC?rs=1&pid=ImgDetMain" alt="Calculus class picture">
+                        <p>Engineering Mathematics III</p>
+                    </div>
+                </a>
+                
+                <a href="../Faculty page/Fucl_page_ds.html">
+                    <div class="class-box">
+                        <img src="https://th.bing.com/th/id/R.4d25343077473127d347597c243ec7a1?rik=TknzCO7ge7x0Mw&riu=http%3a%2f%2fvertassets.blob.core.windows.net%2fimage%2f149c7a64%2f149c7a64-bf59-4f8f-8ea6-34746519af75%2fneurosuite_karolinska_1.jpg&ehk=%2b7NgRUAQL7oth10KvcoF6KeMZ18VJrKMueujsoEC7es%3d&risl=1&pid=ImgRaw&r=0" alt="DS Picture">
+                        <p>Data Structure</p>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="class-box">
+                        <img src="https://th.bing.com/th/id/OIP.RJI1GFvC5RQZUcdMSXCnhgHaFj?rs=1&pid=ImgDetMain" alt="English class picture">
+                        <p>Digital Logic And Computer Architecture</p>
+                    </div>
+                </a>
+                
+
+                <a href="../Faculty page/Fucl_page_dsgt.html">
+                    <div class="class-box">
+                        <img src="https://th.bing.com/th/id/OIP.d64-WpWSphFtQ_BZufzJ2AHaE8?rs=1&pid=ImgDetMain" alt="Psychologyy class picture">
+                        <p>Discrete Structures And Graph Theory</p>
+                    </div>
+                </a>
+                
 
             </div>
 
-            <h2 class="section-title">To Do</h2>
+            <!-- <h2 class="section-title">To Do</h2>
             <div id="todo" class="main-content">
                 <div class="todo-box">
                     <h3>Assignment No. 3</h3>
@@ -150,27 +160,16 @@
                         <button type="button">Details</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         
     
         <div id="right-sidebars-wrapper">
-            <h2 class="section-title">Announcements</h2>
+            <h2 class="section-title">Students Attendance</h2>
             <div id="Announcement-wrapper" class="right-sidebar">
-                <div class="announcement">
-                    <h3>Extra Lectures on Saturday</h3>
-                    <p>All the students are present is compulsory</p>
-                </div>
-                <div class="announcement">
-                    <h3>Room 404 Classes Moved To Room 302</h3>
-                    <p>Room 404 is currently under construction. Please head to room 302 until further notice.</p>
-                </div>
-                <div class="announcement">
-                    <h3>No Classes On Monday</h3>
-                    <p>Classes on monday will be closed due to snowstorms.</p>
-                </div>
+                <canvas id="attendanceChart" width="500" height="500"></canvas>
             </div>
-            <h2 class="section-title">Trending Hashtags</h2>
+            <!-- <h2 class="section-title">Trending Hashtags</h2>
             <div id="Trending-wrapper" class="right-sidebar">
                 <div class="trending-hashtags">
                     <ul>
@@ -183,8 +182,9 @@
                         <li>#holiday</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
