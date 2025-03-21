@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="FeedB.css">
+
+</head>
+<body>
+    <div id="page-container">
+        <div id="main-sidebar-wrapper">
+            <div id="sidebar-sticky">
+                <div id="sidebar-logo">
+                    <h1>Student Dashboard</h1>
+                </div>
+                <nav id="sidebar-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">To-do</a></li>
+                        <li><a href="#">Communities</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <div id="main-content-section-wrapper">
+            <h2 class="section-title">Feedback Form</h2>
+            <div id="classes" class="main-content">
+                <form id="feedback-form">
+                    <h3>Please provide your feedback:</h3>
+                    <div>
+                        <label>Question 1: Did you find the faculty helpful?</label>
+                        <input type="radio" name="q1" value="yes"> Yes
+                        <input type="radio" name="q1" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 2: Was the course material clear?</label>
+                        <input type="radio" name="q2" value="yes"> Yes
+                        <input type="radio" name="q2" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 3: Did the faculty encourage participation?</label>
+                        <input type="radio" name="q3" value="yes"> Yes
+                        <input type="radio" name="q3" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 4: Was the faculty approachable?</label>
+                        <input type="radio" name="q4" value="yes"> Yes
+                        <input type="radio" name="q4" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 5: Did the faculty provide timely feedback?</label>
+                        <input type="radio" name="q5" value="yes"> Yes
+                        <input type="radio" name="q5" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 6: Was the faculty knowledgeable?</label>
+                        <input type="radio" name="q6" value="yes"> Yes
+                        <input type="radio" name="q6" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 7: Did the faculty create a positive learning environment?</label>
+                        <input type="radio" name="q7" value="yes"> Yes
+                        <input type="radio" name="q7" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 8: Was the faculty respectful?</label>
+                        <input type="radio" name="q8" value="yes"> Yes
+                        <input type="radio" name="q8" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 9: Did the faculty meet your expectations?</label>
+                        <input type="radio" name="q9" value="yes"> Yes
+                        <input type="radio" name="q9" value="no"> No
+                    </div>
+                    <div>
+                        <label>Question 10: Would you recommend this faculty to others?</label>
+                        <input type="radio" name="q10" value="yes"> Yes
+                        <input type="radio" name="q10" value="no"> No
+                    </div>
+                    <div>
+                        <label for="advice">Additional Advice:</label>
+                        <textarea id="advice" name="advice"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
